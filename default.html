@@ -19,12 +19,6 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
       </head>
       <body id="top">
         <header id="home">
@@ -36,7 +30,7 @@
                     <ul class="top-nav">
                       <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                       <li><a href="#mountains">Portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#responsive">Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#design">Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                       <li><a href="https://huntercasillas.com/hoopr.html">Hoopr <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                       <li><a href="#contact">Contact <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                     </ul>
@@ -71,14 +65,10 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">Introduction</h1>
-                <p> Disclaimer:<br>
-                  This website is not finished.<br>
-                  I still have to implement features and pages.<br>
-                  For now, it serves as an example of my UI and UX capabilites.<br>
-                  &nbsp<br>
-                  I'm Hunter Casillas.<br>
+                <p>I'm Hunter Casillas.<br>
                   I have a passion to create and invent.<br>
-                  I'm a software engineer with a degree in computer science.<br>
+                  I'm a software developer who loves design.<br>
+                  I have a bachelor's degree in computer science.<br>
                   Feel free to check out my site and portfolio!<br>
                   Check out my other website Hoopr, <a href="https://huntercasillas.com/hoopr.html">here</a>.<br>
                 </p>
@@ -104,39 +94,40 @@
                   <li>
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
-                        <div class="img" style="cursor: pointer" onclick="unfinished();">
+                        <div class="img" id="daisy" style="cursor: pointer" onclick="unfinished();">
                           <img src="img/daisy2.jpg" alt="Portfolio Item">
-                          <div class="overlay">
+                          <div class="overlay" id="daisy-overlay">
                             <a class="expand">
-                                <i class="fa fa-search"></i><br>View More</a>
+                                <!-- fa-expand is also a good icon -->
+                                <i class="fa fa-info-circle"></i><br>Learn More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
                       <h2>Daisy</h2>
-                      <p>Developed a dating application that uses artifical intelligence and machine learning to find your ideal match. User's swipe through profiles in order for the AI to learn their physical and personality preferences. The neural net learns more about what each user likes and suggests an ideal match each day.</p>
+                      <p>Developed a dating application that uses artifical intelligence and machine learning to find your ideal match. Users swipe through profiles in order for the AI to learn their physical and personality preferences. The neural net learns more about what each user likes and suggests an ideal match each day.</p>
                     </div>
                     <div class="col-md-4 wp4 delay-05s">
                         <div class="overlay-effect effects clearfix">
-                          <div class="img" style="cursor: pointer" onclick="unfinished();">
+                          <div class="img" id="dragon" style="cursor: pointer" onclick="unfinished();">
                             <img src="img/dragon5.jpg" alt="Portfolio Item">
-                            <div class="overlay">
+                            <div class="overlay" id="dragon-overlay">
                                 <a class="expand">
-                                    <i class="fa fa-search"></i><br>View More</a>
+                                    <i class="fa fa-info-circle"></i><br>Learn More</a>
                               <a class="close-overlay hidden">x</a>
                             </div>
                           </div>
                         </div>
                         <h2>Dragon Glider</h2>
-                        <p>Developed and designed an iOS game using SpriteKit and accelerometer data. You must navigate the dragon through the sky by rotating your phone. Collect energy and avoid obstacles by gliding around them or breathing fire on them.</p>
+                        <p>Developed and designed an iOS game using SpriteKit and accelerometer data. You must navigate the dragon through the sky by rotating/tilting your phone. Collect energy and avoid obstacles by gliding around them or breathing fire on them.</p>
                     </div>
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
-                        <div class="img" style="cursor: pointer" onclick="unfinished();">
+                        <div class="img" id="carbon" style="cursor: pointer" onclick="unfinished();">
                           <img src="img/carbon1.jpg" alt="Portfolio Item">
-                          <div class="overlay">
+                          <div class="overlay" id="carbon-overlay">
                             <a class="expand">
-                                <i class="fa fa-search"></i><br>View More</a>
+                                <i class="fa fa-info-circle"></i><br>Learn More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
@@ -158,11 +149,11 @@
                   <li>
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
-                        <div class="img" style="cursor: pointer" onclick="unfinished();">
+                        <div class="img" id="family" style="cursor: pointer" onclick="unfinished();">
                           <img src="img/familymap.jpg" alt="Portfolio Item">
-                          <div class="overlay">
+                          <div class="overlay" id="family-overlay">
                             <a class="expand">
-                                <i class="fa fa-search"></i><br>View More</a>
+                                <i class="fa fa-info-circle"></i><br>Learn More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
@@ -172,11 +163,11 @@
                     </div>
                     <div class="col-md-4 wp4 delay-05s">
                       <div class="overlay-effect effects clearfix">
-                        <div class="img" style="cursor: pointer" onclick="unfinished();">
+                        <div class="img" id="hoop" style="cursor: pointer" onclick="unfinished();">
                           <img src="img/hoopr4.jpg" alt="Portfolio Item">
-                          <div class="overlay">
+                          <div class="overlay" id="hoop-overlay">
                             <a class="expand">
-                                <i class="fa fa-search"></i><br>View More</a>
+                                <i class="fa fa-info-circle"></i><br>Learn More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
@@ -186,11 +177,11 @@
                     </div>
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
-                        <div class="img" style="cursor: pointer" onclick="unfinished();">
+                        <div class="img" id="tree" style="cursor: pointer" onclick="unfinished();">
                           <img src="img/apple5.jpg" alt="Portfolio Item">
-                          <div class="overlay">
+                          <div class="overlay" id="tree-overlay">
                             <a class="expand">
-                                <i class="fa fa-search"></i><br>View More</a>
+                                <i class="fa fa-info-circle"></i><br>Learn More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
@@ -208,12 +199,12 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a style="cursor: pointer" onclick="unfinished();" class="ignite-btn">Ignite Your Passion</a>
+                <a style="cursor: pointer" onclick="openModal();" class="ignite-btn">Ignite Your Passion</a>
               </div>
             </div>
           </div>
         </div>
-        <section class="text-center" id="responsive">
+        <section class="text-center" id="design">
           <div class="container-fluid nopadding responsive-services">
             <div class="wrapper">
               <div class="iphone">
@@ -242,7 +233,7 @@
                       </li>
                       <li>
                         <div class="icon">
-                          <i class="fa fa-heart shadow"></i>
+                          <i class="fa fa-lightbulb-o shadow" style="font-size: 55px;"></i>
                         </div>
                         <h2>Creative Direction</h2>
                         <p>I will add creativity info here. </p>
@@ -258,7 +249,7 @@
           <div class="container">
             <h1><i class="fa fa-paper-plane"></i><span>Subscribe to stay updated</span></h1>
             <form onsubmit="validateInput(); return false;">
-              <input type="text" id="useremail" name="" value="" placeholder="" required>
+              <input type="text" style="font-size: 16px; text-transform: lowercase;" id="useremail" name="" value="" placeholder="" required>
               <input type="submit" name="" value="Send">
             </form>
           </div>
@@ -280,12 +271,12 @@
               </div>
               <div class="col-md-4">
                 <div style="cursor: pointer" onclick="location.href='mailto:huntercasillas@me.com';" class="light-box box-hover">
-                  <h2><i class="fa fa-envelope" style="font-size:16px"></i><span>Email</span></h2>
+                  <h2><i class="fa fa-envelope" style="font-size:15px"></i><span>Email</span></h2>
                   <p>huntercasillas@me.com</p>
                 </div>
               </div>
               <div class="col-md-4">
-                  <div style="cursor: pointer" onclick="window.open('https://goo.gl/maps/pc3tLmJiqBD2');" class="light-box box-hover">
+                  <div style="cursor: pointer" onclick="openMap();" class="light-box box-hover">
                       <h2><i class="fa fa-map-marker"></i><span>Location</span></h2>
                       <p>Orem, Utah</p>
                   </div>
@@ -294,14 +285,16 @@
             <div class="row">
               <div class="col-md-12">
                 <ul class="social-buttons">
+                    <li><a href="https://huntercasillas.com/hoopr.html" class="social-btn">
+                    <i class="fa fa-dribbble"></i></a></li>
                   <li><a href="https://www.instagram.com/huntercasillas/" class="social-btn">
                       <i class="fa fa-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/huntercasillas" class="social-btn">
-                      <i class="fa fa-youtube"></i></a></li>
                   <li><a href="https://github.com/huntercasillas" class="social-btn">
-                      <i class="fa fa-github"></i></a></li>
-                  <li><a href="https://huntercasillas.com/hoopr.html" class="social-btn">
-                      <i class="fa fa-dribbble"></i></a></li>
+                  <i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/huntercasillas/" class="social-btn">
+                  <i class="fa fa-linkedin-square"></i></a></li>
+                  <!--<li><a href="https://www.youtube.com/huntercasillas" class="social-btn">
+                  <i class="fa fa-youtube"></i></a></li>-->
                 </ul>
               </div>
             </div>
@@ -322,28 +315,24 @@
             </div>
           </div>
         </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script type="text/javascript">
-            function validateInput() {
-                var email = document.getElementById('useremail').value;
-                var emailRGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                var emailResult = emailRGEX.test(email);
-                if (emailResult) {
-                    alert("Sorry, this feature has not been implemented yet.");
-                } else {
-                    alert("Please enter a valid email address.");
-                }
-            }
-            function unfinished() {
-              alert("Sorry, this feature has not been implemented yet.");
-            }
-        </script>
-      </body>
-    </html>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modalClose" onclick="closeModal();">&times;</span>
+                    <h2 id = "modalTitle" style = "color: white; text-align: center;">&nbsp&nbsp&nbsp&nbsp Coming Soon...</h2>
+                </div>
+                <div class="modal-body">
+                    <center><p>More information will be added here.</p></center>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+    </body>
+</html>
