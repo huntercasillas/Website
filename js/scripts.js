@@ -201,7 +201,7 @@ $(document).ready(function() {
                     closeOverlay(current, 2);
                 } else if (current === "#family-overlay") {
                     closeOverlay(current, 3);
-                } else if (current === "#hoopr-overlay") {
+                } else if (current === "#hoop-overlay") {
                     closeOverlay(current, 4);
                 } else if (current === "#tree-overlay") {
                     closeOverlay(current, 5);
